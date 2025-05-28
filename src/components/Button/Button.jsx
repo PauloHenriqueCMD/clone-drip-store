@@ -1,12 +1,14 @@
 import './Button.css';
-export const Button = ({Children, width, height, color}) => {
+export const Button = ({children, width, height, color, margin}) => {
   return(
     <button className="button"
      style={{
        width: width,
        height: height,
        color: color,
+       background: color && 'f5f5f5',
+       margin: margin
      }}
-    >{Children}</button>
+    >{children}</button>
   );
 }

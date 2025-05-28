@@ -1,14 +1,13 @@
 #header {
-  border: 1px solid red;
   width: 100%;
 }
 
 #header .box-header {
   width: 90rem;
   height: 12rem;
-  border: 1px solid red;
   margin: 0 auto;
   padding: 0 6.250rem;
+  display: flex;
 }
 
 #header .box-header .box-header-children {
@@ -16,4 +15,5 @@
   width: 62.063rem;
   height: 8.063rem;
   margin-top: 2.125rem;
+  display: flex;
 }
