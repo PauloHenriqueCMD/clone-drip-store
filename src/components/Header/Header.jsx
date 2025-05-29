@@ -1,3 +1,5 @@
+import { Nav } from '../Nav/Nav';
+import { Useful } from '../Useful/Useful';
 import { Logo } from '../Logo/Logo';
 import { Input } from '../Input/Input';
 import { Button } from '../Button/Button';
@@ -24,9 +26,41 @@ export const Header = () => {
             value={'Cadastre-se'}
             margin={'1rem 0 0 0'}
             color={'#474747'}
-            href={'#'}
+            to={'#'}
             textDecoration={'underline'}
           />
+          <Nav
+            position={'absolute'}
+            top={'8.375rem'}
+            gap={'2rem'}
+            width={'26.438rem'}
+            height={'1.813rem'}
+          > 
+           <li>
+            <Useful
+              value={'Início'}
+              color={'#666666'}
+              to={'/'}/>
+           </li>
+           <li>
+            <Useful
+              value={'Meus Pedidos'}
+              color={'#666666'}
+              to={'/Pedidos'}/>
+           </li>
+           <li>
+            <Useful
+              value={'Produtos'}
+              color={'#666666'}
+              to={'/Produtos'}/>
+           </li>
+           <li>
+            <Useful
+              value={'Ofertas'}
+              color={'#666666'}
+              to={'/Ofertas'}/>
+           </li>
+         </Nav>
           </div>
           <Button 
           width={'7.125rem'} 
@@ -34,6 +68,7 @@ export const Header = () => {
           margin={'2.75rem 0 0 1.875rem'}
          >Entrar</Button>
          <ShopCart value={7}/>
+         
       </div>
     </header>
     </>
